@@ -1,0 +1,12 @@
+const content = '
+    <main>
+     <ul>
+        <li>Name: ${newPencileBox.name}</li>
+        <li>Size: ${newPencileBox.size}</li>
+        <li>Color: ${newPencileBox.color}</li>
+        <li>Zip Length Left: ${newPencileBox.Zip Length Left}</li>
+        <li>Zip Length Right: ${newPencileBox.ip Length Right}</li>
+        <li>Zip Length Top: ${newPencileBox.Zip Length Top}</li>
+        <li>Zip Status: ${newPencileBox.ZipOpen}</li>
+     </ul>'
+   </main>

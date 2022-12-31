@@ -1,0 +1,41 @@
+class pencilebox {
+        1 reference
+        constructor(
+                name,
+                size,
+                color,
+                ziplengthleft,
+                ziplengthright,
+                ziplengthtop,
+                zipOpen,
+        ){
+                this.name = name;
+                this.size = size;
+                this.color = color;
+                this.ziplength = {
+                        left: ziplengthleft,
+                        right: ziplengthright,
+                        top: ziplengthtop,
+                };
+                this.zipOpen = zipOpen;
+        }
+        0 reference
+        toggleZip(zipStatus){
+                this.zipOpen = zipstatus;
+        }
+
+}
+1 reference
+export default pencilebox;
+
+
+
+
+
+
+import pencilBox from "./pencilBox.js";
+const newPencilBox = new PencileBox("Pencile Box", 30, "red", 12, 12,24,false)
+
+
+console.log("The Pencile Box Object:",newPencilBox);
+console.log("Size:", newPencileBox.size);

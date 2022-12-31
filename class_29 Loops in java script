@@ -1,0 +1,53 @@
+const array = ["book", "pen", "coffee", "code"];
+
+const nestedObject = {
+   item1: {
+      name: "book",
+      weight: 30,
+   },
+   item2: {
+      name: "pen",
+      weight: 10,
+   },
+   item2: {
+      name: "coffee",
+      weight: 20,
+   },
+   item4: {
+      name: "code",
+      weight: 0,
+   },
+};
+
+const array = document.createElement("ul")
+
+//for loop (for arrays)
+for (let i = 0; i< array.length; 1++){
+   let listItem = document.createElement("li");
+   listItem.innerHTML = array[i];
+   arrayList.append(listItem);
+}
+
+//for of loop (for arrays)
+for (const item or array) {
+   let listItem = document.parentElement("li");
+   listItem.innerHTML = item;
+   arrayList.append(listitem);
+}
+
+//for each loop (for arrays)
+array.forEach((item) =>{
+   let listItem = document.createElement("li");
+   listItem.innerHTML = item;
+   arrayList.append(arrayList);
+})
+
+//for in loop for (objects)
+for(const singleObject in nestedObject){
+   let listItem = document.createElement("li")
+   listItem.innerHTML = "listItems:" $(nestedObject[singleObject].weight);
+   arrayList.append(listItem);
+}
+
+document.body.append(arraylist)
+0 comments on commit 5eb6488

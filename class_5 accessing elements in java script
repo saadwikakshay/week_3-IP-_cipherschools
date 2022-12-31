@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="x-UA-compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width,init">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <header class="header-content" id="header">
+            <p>Welcome!</p>
+        </header>
+        <main>
+            <img src="/assets/leaf.jpg" alt="" width="200px"/>
+            <p>this is the main</p>
+            <p>this is the main two</p>
+            <p>this is the main three</p>
+            <p>this is the main four</p>   
+        </main>
+        <footer>this is the footer</footer>
+        <script src="/js/elements.js"></script>
+    </body>
+
+</html>
+
+
+let type = document.querySelector("header");
+console.log(type);
+
+let classSelector = document.querySelector(".header-content");
+console.log(classSelector)
+
+let idSelector = document.querySelector("#header");
+console.log(idSelector)
+
+let decendent = document.querySelector(".header-content p");
+console.log(decendent)
+
+let All = document
+console.log(All);
+
+let bg = document
+     .querySelectorAll("main p")
+     .forEach((item) => (item.getElementsByClassName.background = "blue"));
+
+let color = document
+     .querySelectorAll("main p:last-child")
+     .forEach((item) => (item.style.color = "white"));
+
+/*Older Methods*/
+let oldtype = document.getElementsByTagName("header")
+console.log(oldtype)
+
+let oldtype = document.getElementsByClassName("header-content")
+console.log(oldclass);
+
+let oldid = document.getElementById("header");
+console.log(oldid)

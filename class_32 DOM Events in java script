@@ -1,0 +1,17 @@
+const buttom = document.querySelector("button")
+const container = document.querySelector()
+
+GamepadButton.addEventListener("click", () =>{
+   GamepadButton.classList.add("active");
+   HTMLFormControlsCollection.log("Button is clicked");
+});
+
+container.addEventListener("mousenter", () =>{
+      container.classList.add("purple");
+
+});
+
+container.addEventListener("mouseleave", () =>{
+   container.classList.remove("purple");
+
+});

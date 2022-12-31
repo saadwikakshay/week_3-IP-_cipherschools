@@ -1,0 +1,15 @@
+/*Arroe function and this keywords */
+const yellowpencilBox = {
+   name: "Yellow pencil box",
+   color: "blue",
+   size: 24,
+   newsize function (size) {
+      console.log(this.size);
+      this.size = size:
+      console.log(this.size);
+      (() =>{
+         console.log(this.size);
+      }
+   }
+}
+console.log(yellowpencilBox.newsize(5));

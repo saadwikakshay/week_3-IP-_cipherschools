@@ -1,0 +1,34 @@
+/*Arrays in js*/
+
+// let arrayitem = "book";
+
+const books = ["pens", arrayItem, 4, true];
+
+books[books.length]
+
+books[13] = 3.8;
+
+console.log(books[5]);
+
+console.log(books);
+console.log(books.length);
+console.log(books[1]);
+
+/* Array methods*/
+let pencilBoxContents = ["pen", "pencil", "eraser"];
+
+pencilBoxContents.pop()
+
+pencilBoxContents.forEach(function(item){
+   item = <li>$(item)</li>;
+});
+
+let shortItems = pencilBoxContents.find(function(item){
+   if(item.length <=5){
+      return item;
+   }
+});
+
+console.log(shortItems);
+
+console.log(pencilBoxContents.join(" |"));

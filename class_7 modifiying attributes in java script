@@ -1,0 +1,19 @@
+/Modifying attributes in js
+let attributes = document.querySelector("img").attributes;
+console.log(attributes)
+
+let attribute = document.querySelector("img").attribute("border");
+console.log(attribute)
+
+let getattributes = document.querySelector("img").getattributes("border");
+console.log(getattributes)
+
+let setattribute = document
+        .querySelector("img")
+        .setAttribute("src", "/assets/leaf.jng");
+console.log(setattribute)
+
+let removeattribute = document
+        .querySelector("img")
+        .setAttribute("src", "/assets/leaf.jng");
+console.log(removeattribute)

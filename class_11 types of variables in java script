@@ -1,0 +1,31 @@
+//var
+
+//let
+
+//const
+var container = 13;
+console.log(container);
+
+var container = "blue";
+console.log(container);
+
+var x = 13,
+    y = 18,
+    z = 20;
+console.log(x, y, z);
+
+var contain;
+console.log(contain)
+
+//example
+var bgcolor = "green";
+document.querySelector(".up-container").style.backgroundcolor = bgcolor;
+
+var bgcolor = "pink"
+document.querySelector(".bottom-container").style.backgroundcolor = bgcolor;
+
+function heading(){
+        var bgcolor = "blue";
+        documents.querySelector(".heading").style.color = bgcolor
+}
+heading();

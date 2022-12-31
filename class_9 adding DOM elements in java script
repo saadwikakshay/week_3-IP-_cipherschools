@@ -1,0 +1,11 @@
+//adding DOM elements in js
+let content = "this is the Bootcamp"
+let container = document.createElement("section");
+let container = document.createElement("section")
+
+container.classList.add("pencil-box");
+container.setAttribute("id", "pencil");
+
+container.innerHTML = content;
+
+header.append(container);

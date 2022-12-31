@@ -1,0 +1,30 @@
+fetch("https://www.google.com/search?q=json+placeholders&oq=json+placeholders&aqs=chrome..69i57.10283j0j7&sourceid=chrome&ie=UTF-8")
+.then(responce.json())
+.then(data) => console.log(data):
+
+asyncfunctions getUsers(){
+   let url = "https://www.google.com/search?q=json+placeholders&oq=json+placeholders&aqs=chrome..69i57.10283j0j7&sourceid=chrome&ie=UTF-8";
+
+   try {
+      let responce = await fetch(url);
+      return await responce.json():
+
+   }catch (error) {
+      console.log(arror);
+   }
+}
+
+async function Users() {
+   let users = await getUsers():
+   let html = "";
+
+   users.forEach((users) =>{
+      let content = <div>
+                <p>$(user.name)</p>
+                <p>$(user.email)</p>
+                </div>;
+                html += content;
+   })
+      document.body.innerHTML = html;
+}
+Users();

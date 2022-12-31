@@ -1,0 +1,60 @@
+const content = new newPencileBox{
+   "pencilebox",
+   30,
+   "red",
+   12,
+   12,
+   24,
+   false,
+}
+    <main>
+     <ul>
+        <li>Name: ${newPencileBox.name}</li>
+        <li>Size: ${newPencileBox.size}</li>
+        <li>Color: ${newPencileBox.color}</li>
+        <li>Zip Length Left: ${newPencileBox.Zip Length Left}</li>
+        <li>Zip Length Right: ${newPencileBox.ip Length Right}</li>
+        <li>Zip Length Top: ${newPencileBox.Zip Length Top}</li>
+        <li>Zip Status: ${newPencileBox.ZipOpen ? "The zip is open: "the zip is clased}</li>
+     </ul>'
+   </main>
+   ;
+   document.body.innerHTML = content;
+
+   const button = document.querySelector("button");
+   const Status = document.querySelector(".status");
+
+   button.addEventListener("click", () =>{
+      status.innerText === "The zip is open"
+           ? (Status.innerText = "the zip is closed")
+           : (status.innerText = "The zip is open"):
+           status.innerText === "The zip is open" ? Status.innerText = "The zip is open" ? button.innerText = "close the zip" : button.innerText = "open the zip";
+   });
+
+   console.log("The pencil box object:",newpencilbox);
+   console.log("size:",newPencileBox.size);
+
+   console.log("Date purchased:",newPencileBox.datepurchased);
+   console.log("Date purchesed:",newPencileBox.datepurchased);
+
+   if (newpencilBox.ZipOpen == true && newPencileBox.size === 30){
+      console.log("yes");
+   }else {
+      console.log("no")
+   }
+
+   let size = 30;
+   let boxsize;
+
+   switch(true){
+      case size > 30:
+      boxsize = "large";
+      break;
+      case size <= 30 && size >= 20:
+         boxsize = "medium";
+      case size <= 19 && size >= 10:
+         boxsize = "small";
+   }
+
+   console.log("Box size:",size);
+   console.log("Status:",boxsize);

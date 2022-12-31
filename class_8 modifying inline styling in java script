@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="x-UA-compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width,init">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <header class="header-content" id="header">
+            <p>Welcome!</p>
+        </header>
+        <main>
+            <img src="/assets/leaf.jpg" alt="" width="200px"/>
+            <p>this is the main</p>
+            <p>this is the main two</p>
+            <p>this is the main three</p>
+            <p>this is the main four</p>   
+        </main>
+        <footer style="border: 2px solid green">this is the footer</footer>
+        <script src="/js/elements.js"></script>
+    </body>
+
+</html>
+
+//modifying inline style in js
+let footer = document.querySelector("footer").style;
+console.log(footer);
+
+let footerstyle = document.querySelector("footer").style.backgroundColor = "purple";

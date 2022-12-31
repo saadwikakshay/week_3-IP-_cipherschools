@@ -1,0 +1,537 @@
+HTML PART 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="x-UA-compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width,init">
+        <link rel="shortcut icon" href="assests/leaf.jng" type="image/x-icon" />
+        <link
+             rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Landing a page</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class=""logo>
+                    <ul class="nav-links">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Shop</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>contact</li></a>
+                        <a href="#"><li class="fa fa-search"></li></a>
+                        <a href="#"><li class="fa fa-shopping-cart-shopping-bag">Home</li></a>
+                    </ul>
+                    <div class="burging">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="banner">
+                        <div class="left-side"> 
+                            <img src="/assets/leaf.jng">
+                        </div>
+                        <div class="right-side">
+                            <h1><span id="create">decorate your home with us</span></h1>
+                        <p>
+                            <span id="create">moving into a home can be one of its great especially when it comes to decorating.
+                                <br/>
+                                <br/>
+                                <a href="#"></a><button class="btn">Shop now</button>
+                            </span>
+                        </p>
+                        </div>
+                    </div>
+
+            </nav>
+        </div>
+        </header>
+        <main>
+            <div class="product-section">
+                <div class="product-item">
+                    <img src="assests/chair.png" alt="">
+                    <br/>
+                    <h2>folding table</h2>
+                    <span>price = rs.1499/-</span>
+                </div>
+                <div class="product-section">
+                    <div class="product-item">
+                        <img src="assests/drawers.png" alt="">
+                        <br/>
+                        <h2>Spread Drawers</h2>
+                        <span>price = rs.1499/-</span>
+                    </div>
+            </div>
+            <div class="offer-parallel">
+                <div class="offer">
+                    <h1>Best offers</h1>
+                    <p>Get the limited time offer this summer.dont miss out this chance</p>
+                    <br>
+                    <div id="demo"></div>
+                    <div class="time-flex">
+                        <div class="time-flex-inner">
+                            <div id="hours"></div>
+                            Days
+                        </div>
+                        <div id="demo"></div>
+                        <div class="time-flex">
+                            <div class="time-flex-inner">
+                                <div id="hours"></div>
+                                Hours
+                            </div>
+                            <div id="demo"></div>
+                            <div class="time-flex">
+                                <div class="time-flex-inner">
+                                    <div id="Minutes "></div>
+                                    Minutes 
+                                </div>
+                                <div id="demo"></div>
+                                <div class="time-flex">
+                                    <div class="time-flex-inner">
+                                        <div id="Seconds"></div>
+                                        Seconds
+                                    </div>
+                    </div>
+                </div>
+                <div class="blogo" id="blogo">
+                    <h1>
+                        <div class="column column-image" style="backbround-image: url(./asserts/56.png")>
+                        <div class="column column-right">
+                            <div class="align-item">
+                                <h2>Sofa cum bed</h2>
+                                <br/>
+                                <p>&ldquo;
+                                    design team has done focused research on sofa-cum-bed and how it can be useful
+                                    we have designed a unique range of this type of furniture. the range offers great
+                                </p>
+                                <br/>
+                                <button class="btn-two">Read More</button>
+                            </div>
+                        </div>
+                        </div>
+                    </h1>
+                </div>
+                <div class="newsleter-parrallex">
+                    <div class="news">
+                        <h1> Join our news letter</h1>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Enter your email: ">
+                        <input type="button" name="button" id="button" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-item">
+                    <div class="logo">
+                        <h3>Brand Name</h3>
+                    </div>
+                    <br>
+                    <p>Moving into a new home can be one of lifes great joys but it can also useful especially when it comes to decorating.
+
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+        <script src="/js/elements.js"></script>
+         <script>
+
+
+            gsap.to("#creat", {y: '0%', duration: 0.7,stagger: 0.2});
+            if(window.innerwidth >= 768){
+                gsap.from(".nav", {opacity: 0, duration: 1, delay: 1, y: '-30'});
+            }
+
+            var tl = gsap.timeline():
+            tl.from('.left-side', {duration: 1.s, translateY: 50, opacity: 0});
+            tl.to('img',{clipPath: "polygon(0 0 , 100% 0, 100% 100%, 0 100%"}, "-=1.1)");
+
+
+         </script>
+        <script>
+            var countDownDate = new Date(May 7 2022 00: 00: 00).getTime():
+            var x = setInterval(function);
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = math.floor(distance/ (1000 * 60 * 60 *24));
+            var hours = math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60 ));
+            var minutes = math.floor((distance % (1000 * 60 * 60 ))/(1000 * 60));
+            var seconds = math.floor((distance % (1000 * 60))/1000);
+
+            document.getElementById("days").InnerHTML = days;
+            document.getElementById("hours").InnerHTML = hours;
+            document.getElementById("minutes").InnerHTML = minutes;
+            document.getElementById("seconds").InnerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").InnerHTML = "offer Finished";
+            }
+
+        </script>
+    </body>
+
+</html>
+
+
+
+
+
+CSS PART
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-font: "poppins", sans-serif;
+    --body-color: white;
+    --black-color: #202021;
+    --pimary-color: white;
+    --secondary-color: green;
+    --dark-color: #366858;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--body-font);
+    background-color: var(--white-colr);;
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+ul li{
+    list-style: none;
+}
+
+.btn{
+    padding: 10px;
+    border: 2px solid var(--white-color);
+    outline: none;
+    background: transparent;
+    color: var(--body-font);
+    font-family: var(--body-color);
+    cursor: pointer;
+    border-radius: 2px;
+}
+.btn-hover{
+    box-shadow: 5px 5px 5px 10px var(--pimary-color);
+    font-weight: 500;
+    transition: all 100ms ease-out;
+
+
+}
+.btn-two{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    font-family: var(--body-color);
+    cursor: pointer;
+    border-radius: 2px;
+}
+.btn-two-hover {
+    transform: scale(1, 1);
+    transition: all 0.3s ease-out;
+}
+
+nav {
+    background: transparent;
+    color: var(--white-color);
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+}
+.nav.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.banner {
+    width: 100%;
+    height: 96vh;
+    padding: 100px;
+    display: fl;
+    justify-content: space-evenly;
+    background: var(--secondary-color);
+    align-items: center;
+}
+
+.banner .left-side {
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+
+}
+.banner.right-side{
+    width: 60%;
+    text-align: right;
+    color: var(--white-color);
+    margin-top: 15rem;
+    position: absolute;
+    top: 0;
+    right: 15;
+    z-index: 10;
+
+}
+.banner -right-side h1 {
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.banner .right-side h1 span {
+    display: inline-block;
+    transform: translateY(!00%);
+}
+
+
+.banner.right-side p{
+    font-size: 16px;
+    max-width: 580px;
+    float: right;
+    overflow: hidden;
+}
+.banner.right-side p span {
+    display: inline-block;
+    transform: translateY(100%);
+}
+.banner .right-side p -btn{
+    width: 150px;
+    font-size: 18px;
+}
+ .products-section {
+    width: 100%;
+    margin-top: 4rem;
+ }
+ .products-section h1{
+    text-align: center;
+    color: var(--dark-color);
+    text-transform: uppercase;
+ }
+ .products-grid {
+    display: grid;
+    background: var(--pimary-color);
+    margin-top: 2rem;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+ }
+ .products-items{
+    margin: 30px;
+    padding: 20px;
+    color: var(--dark-color);
+
+ }
+ .products-item:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-out;
+ }
+
+ .products-item img {
+    max-width: 80%;
+    background: var(--white-color);
+ }
+
+ .offer-parallax{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url("assets/offer-parallal.jng");
+    box-shadow: inset 0 0 0 1000px rgb(0,0,0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.offer-parallax{
+    text-align-last: center;
+    color: var(--white-color);
+    float: right;
+    width: 40%;
+    padding: 8%;
+}
+
+.blogs{
+    width: 100%;
+    margin-top: 2rem;
+}
+.blogs h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.grid-flex{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 50vh;
+}
+.column{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.align-item {
+    width: 60%;
+}
+.column-image {
+    background-size: cover;
+    background-position: center center;
+}
+
+.column-right {
+    text-align: left;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column-left {
+    text-align: right;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+
+}
+.column h2 {
+    color: var(--dark-color);
+}
+
+.newsletter-parallax{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url("asserts/news.png");
+    box-shadow: insert 0 0 0 1000px rgb(0,0,0.3);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto;
+
+}
+.newsletter-parallax .news {
+    text-align: center;
+}
+.newsletter-parallax.news h1{
+    color: var(--white-color);
+}
+.newsletter-parallax input[type="email"] {
+    padding: 10px 30px 10px 30px;
+    font-family: var(--body-font);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.newsletter-parallax input[type="buttton"] {
+    padding: 10px;
+    font-family: var(--body-font);
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+.newsletter-parallax input[type="button"]:hover {
+    padding: 10px;
+    font-family: var(--body-font);
+    border-radius: 8px;
+    font-size: 16px;
+}
+footer{
+    width: 100%;
+    padding: 5rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer .footer-item {
+    margin-bottom: 1rem;
+    max-width: 20%;
+}
+.footer-item.logo h3 {
+    color: var(--white-color);
+}
+.footer-item ul li,
+.footer-item p{
+    color: var(--primary-color);
+}
+.copy {
+    text-align: center;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer .footer-item {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+JAVASCRIPT PART
+
+
+const navSlide = () =>{
+    const burger = documennt.querySelector(".burger");
+    const nav = document.querySelector(".nav .nav-links");
+    const navLinks = document.querySelectorAll(".nav .nav-links li");
+
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active"):
+
+        navLinks.forEach((link, index) => {
+
+            navLinks.forEach((link, index) =>{
+                if (link.style.animation) {
+                    link.style.animation = ''
+                } else {
+                    link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 0.'
+                }
+
+            })
+
+        });
+        burger.classList.toggle('toggle');
+    });
+
+};
+nav
